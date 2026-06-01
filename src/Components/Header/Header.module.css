@@ -1,0 +1,170 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  position: fixed; 
+  top: 20px;
+  left: 20px; 
+  width: calc(100% - 40px);
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  z-index: 1000; 
+}
+
+ .div_logo {
+  display: flex; 
+  align-items: center; 
+  gap: 10px;
+  padding: 1%;
+  
+ 
+  
+}
+.div_logo a{
+  text-decoration: none;
+}
+
+ .logo {
+  width: 80px;
+  height: auto; 
+  border-radius: 15px;
+}
+
+ .titulo {
+  color: white;
+  font-size: 2rem; 
+  margin: 0;
+  
+}
+
+.nav {
+  display: flex;
+  gap:20px;
+ margin-left: auto;
+ 
+  
+
+}
+
+.nav a {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  box-shadow: 0px 0px 2px white;
+}
+
+.nav a:hover{
+
+  box-shadow: 2px 1px 4px rgb(186, 122, 3);
+}
+
+.cta h1{
+
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  font-size: 3rem;
+  
+}
+.cta p{
+
+  position: absolute;
+  color:white;
+  top:42%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+
+}
+.cta a{
+  text-decoration: none;
+  color:white;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: black;
+  border-radius: 6px;
+  padding:1px;
+  padding-left: 7px;
+  padding-right: 7px;
+  box-shadow: 2px 1px 4px white;
+
+}
+.cta a:hover{
+ box-shadow: 2px 1px 4px rgb(186, 122, 3);
+
+}
+
+@media (max-width: 760px) {
+  .header {
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .div_logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+    padding: 3px 7px;
+  }
+
+  .logo {
+    width: 40px;
+    border-radius: 5px;
+  }
+
+  .titulo {
+    font-size: 1rem;
+  }
+
+  .cta h1{
+    font-size: 1.5rem;
+    top:24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  .cta p{
+    font-size: 0.8rem;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .cta a{
+ 
+    top: 45%;
+    font-size: 0.9rem;
+
+
+  }
+}

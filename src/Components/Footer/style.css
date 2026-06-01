@@ -1,0 +1,44 @@
+.footer {
+  background-color: black;
+  color: white;
+
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.footer-content p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.footer-content hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+  opacity: 0.2;
+  margin: 20px 0;
+}
+
+@media (max-width: 760px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+}
